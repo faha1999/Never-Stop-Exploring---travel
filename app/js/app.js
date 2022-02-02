@@ -23,3 +23,14 @@ document.querySelector('#search-btn').onclick = () => {
 document.querySelector('#close-search').onclick = () => {
   searchForm.classList.remove('active');
 };
+
+// home slide
+
+var swiper = new Swiper('.home-slider', {
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+});
