@@ -8,6 +8,11 @@
   align-items: center;
   display: flex;
 
+  &.active {
+    background: $white;
+    box-shadow: $box-shadow;
+  }
+
   .logo {
     margin-right: auto;
     font-size: 2.5rem;

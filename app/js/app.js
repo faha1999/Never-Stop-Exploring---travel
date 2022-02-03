@@ -10,6 +10,22 @@ document.querySelector('#nav-close').onclick = () => {
 
 window.onscroll = () => {
   navbar.classList.remove('active');
+
+  // header active
+  if (window.scrollY > 0) {
+    document.querySelector('.header').classList.add('active');
+  } else {
+    document.querySelector('.header').classList.remove('active');
+  }
+};
+
+window.onload = () => {
+  // header active
+  if (window.scrollY > 0) {
+    document.querySelector('.header').classList.add('active');
+  } else {
+    document.querySelector('.header').classList.remove('active');
+  }
 };
 
 // search
