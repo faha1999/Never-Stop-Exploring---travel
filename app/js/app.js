@@ -40,13 +40,37 @@ document.querySelector('#close-search').onclick = () => {
   searchForm.classList.remove('active');
 };
 
-// home slide
-
+// home slid
 var swiper = new Swiper('.home-slider', {
   loop: true,
   grabCursor: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
+  }
+});
+
+// shop slide
+var swiper = new Swiper('.products-slider', {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    640: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 3
+    },
+    1024: {
+      slidesPerView: 4
+    }
   }
 });
