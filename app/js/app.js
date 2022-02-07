@@ -44,6 +44,11 @@ document.querySelector('#close-search').onclick = () => {
 var swiper = new Swiper('.home-slider', {
   loop: true,
   grabCursor: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
@@ -55,6 +60,11 @@ var swiper = new Swiper('.products-slider', {
   loop: true,
   grabCursor: true,
   spaceBetween: 20,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
@@ -81,6 +91,11 @@ var swiper = new Swiper('.review-slider', {
   loop: true,
   grabCursor: true,
   spaceBetween: 20,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
