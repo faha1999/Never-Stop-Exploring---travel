@@ -86,7 +86,6 @@ var swiper = new Swiper('.products-slider', {
 });
 
 // reviews
-// shop slide
 var swiper = new Swiper('.review-slider', {
   loop: true,
   grabCursor: true,
@@ -108,6 +107,33 @@ var swiper = new Swiper('.review-slider', {
       slidesPerView: 2
     },
     768: {
+      slidesPerView: 3
+    }
+  }
+});
+
+// blogs
+var swiper = new Swiper('.blogs-slider', {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 10,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    991: {
       slidesPerView: 3
     }
   }

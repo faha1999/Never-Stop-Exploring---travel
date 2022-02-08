@@ -1,0 +1,49 @@
+.blogs {
+  .slide {
+    text-align: center;
+    padding: 2rem;
+
+    img {
+      height: 25rem;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+
+    .icons {
+      background: $black;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      position: relative;
+      top: -2rem;
+      display: inline-block;
+
+      a {
+        font-size: 1.4rem;
+        color: $white;
+        margin: 0 1rem;
+
+        &:hover {
+          color: $green;
+        }
+
+        i {
+          padding-right: 0.5rem;
+          color: $green;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: $black;
+    }
+
+    p {
+      font-size: 1.4rem;
+      padding: 1rem 0;
+      line-height: 2;
+      color: $black;
+    }
+  }
+}
